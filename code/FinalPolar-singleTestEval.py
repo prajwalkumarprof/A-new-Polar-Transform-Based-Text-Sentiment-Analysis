@@ -16,7 +16,7 @@ import cv2
 import time
 
 MODEL_PATH = 'polarTRmodel.h5'
-IMAGE_PATH = '../DatasetRGB/Negative/gen_cvB_N1.png'
+IMAGE_PATH = '../Dataset333/Both/Negative/d3.jpg'
 IMG_SIZE = (224, 224)  # Update to match your model's input size
 CLASS_NAMES = ['Negative', 'Neutral', 'Positive']  # Update as needed
 
