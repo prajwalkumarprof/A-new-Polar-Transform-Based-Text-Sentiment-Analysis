@@ -1,6 +1,3 @@
-"""
-Simplified version - Just load model and test single image
-"""
 from skimage import data
 from skimage.registration import phase_cross_correlation
 from skimage.transform import warp_polar, rotate, rescale
