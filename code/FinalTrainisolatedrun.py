@@ -22,7 +22,6 @@ from PIL import Image
 import seaborn as sns
 from sklearn.metrics import classification_report, confusion_matrix
 
-#image_folder = '../DatasetRGB/'
 image_folder = '../Dataset333/BOTH/'
 
 Directorylist = []
