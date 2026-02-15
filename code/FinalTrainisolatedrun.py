@@ -186,11 +186,7 @@ print(f"Test set: {x_test.shape}, {y_test.shape}")
 model = create_cnn_model(input_shape, num_classes=3)
 # model = create_simpler_cnn_model(input_shape, num_classes=3)
 
-#model.compile(
- #   optimizer='adam',
-  #  loss='categorical_crossentropy',
-   # metrics=['accuracy']
-#)
+
 
 model.compile(
   optimizer='SGD',
