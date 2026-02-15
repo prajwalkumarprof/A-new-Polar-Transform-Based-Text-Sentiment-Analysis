@@ -106,9 +106,9 @@ def create_cnn_model(input_shape, num_classes=3):
      
     x = layers.Permute((2, 1))(inputs)  # Now shape: (256, 2)
      
-    x = layers.Conv1D(filters=32, kernel_size=3, padding='same', activation='relu')(x)
-    x = layers.BatchNormalization()(x)
-    x = layers.MaxPooling1D(pool_size=2)(x)  # Shape: (128, 32)
+    #x = layers.Conv1D(filters=32, kernel_size=3, padding='same', activation='relu')(x)
+    # x = layers.BatchNormalization()(x)
+    # x = layers.MaxPooling1D(pool_size=2)(x)  # Shape: (128, 32)
      
     x = layers.Conv1D(filters=64, kernel_size=3, padding='same', activation='relu')(x)
     x = layers.BatchNormalization()(x)
@@ -124,8 +124,8 @@ def create_cnn_model(input_shape, num_classes=3):
      
     x = layers.Dense(128, activation='relu')(x)
     x = layers.Dropout(0.5)(x)
-    x = layers.Dense(64, activation='relu')(x)
-    x = layers.Dropout(0.3)(x)
+    # x = layers.Dense(64, activation='relu')(x)
+    # x = layers.Dropout(0.3)(x)
      
     outputs = layers.Dense(num_classes, activation='softmax')(x)
     
