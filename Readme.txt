@@ -1,3 +1,4 @@
+
 #Train polar optimised model
 $python3 FinalPolar-train.py
 
@@ -7,5 +8,9 @@ $python FinalPolar-singletestEval.py
 #train and analysis 
 $python3 FinalTrainisolatedrun.py
 
+(
+# Use this command to expand dataset into R,G,B 
+$python3 RGBgen.py
+)
 
 
